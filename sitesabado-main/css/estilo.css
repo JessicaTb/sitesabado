@@ -1,0 +1,314 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=League+Spartan:wght@100..900&display=swap');
+
+ /*definir o tema dark do site */
+
+:root, :root[data-theme='dark']  {
+
+ /*definir cores padrão em variàvel*/
+
+
+ --primary-color: #f0f0f0;
+ --primary-bg-color: #111217 ; /*bg- background*/
+ --secundary-bg-color: #28292e;
+ --primary-border-color: #28292e;
+ --secundary-border-color: #56575a;
+
+
+ /*definir cores padrão para os textos em variàvel*/
+ --title-color: #f0f0f0;
+ --text-color: #9a9a9c;
+ --link-color: #9a9a9c;
+ --icon-color: #C7C8C9;
+
+}
+
+:root [data-theme='light'] {
+
+    --primary-color: #0b0b0f;
+    --primary-bg-color: #e9e9e9;
+    --secundary-bg-color: #C7c8c9;
+    --primary-border-color: #C7c8c9;
+    --secundary-border-color: #9a9a9c;
+
+    --title-color: #0b0b0f;
+    --text-color: #28292e;
+    --link-color: #28292e;
+    --icon-color: #56575a;
+
+}
+html[data-theme='light'] .brand-logo {
+    filter: invert(1);
+}
+    
+
+    /*html[data-theme='light'] .tecnologias-logo*/
+
+    /*reset CSS
+    padronizar navegadores
+    */
+
+* {
+    margin: 0; /*margem*/
+    padding: 0; /*espaçamento interno*/
+    vertical-align: baseline;
+    list-style: none;
+    scrollbar-width: thin;
+    scrollbar-color: var(--secundary-bg-color)transparent;
+
+}
+
+body {
+    background: var(--primary-bg-color);
+    font-family: 'inter', 'tahoma' , 'geneva', 'verdana', 'sans serif';
+    color: var(--text-color); /*cor do texto*/
+}
+::-webkit-scrollbar{
+    width: 0.5rem;
+    
+}
+
+::-webkit-scrollbar-track{  /*responsável pela barra de rolagem*/
+    background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb{   /*como a barra de rolagem se comporta*/
+    background-color: var(--secundary-bg-color);
+    border-radius: 50rem;
+}
+
+
+
+a{
+    text-decoration: none;
+    color: var(--text-color);
+
+}
+a:hover {
+    color: var(--primary-color);
+
+}
+i {
+    color: var(--icon-color);
+}
+b {
+    font-weight: 400;
+
+}
+h1 {
+    font-size: 2.5rem;
+    font-weight: 200;
+}
+h2 {
+    font-size: 2rem;
+    text-align: center;
+    letter-spacing: 0.4rem;
+    
+}
+h3 {
+    font-size: 1.55rem;
+    text-align: left;
+    
+}
+h4 {
+    color: var(--primary-color);
+    font-weight: 400;
+    font-size: 1.15;
+    text-align: left;
+}
+h1, h2, h3 {
+    font-family: 'league spartan', tahoma, geneva, verdana, sans-serif;
+    text-transform: uppercase;
+    color: var(--title-color);
+    font-weight: 200;
+
+}
+p, span, li {
+    font-size: 1rem;
+
+}
+p {
+    text-align: justify;
+}
+.header {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;  /*compromwnto*/
+    padding: 0.5rem 1rem ; /*espaçamento*/
+    z-index: 2;  /*sobreposição*/
+
+}
+.header-toggle{
+    display: flex;
+    justify-content: flex-end;
+
+}
+.header-brand .brand-logo {
+    width: 3.25rem; /*comprimento*/   /*3.25 = 55px*/
+    height: 3.25rem;  /*altura*/
+
+}
+#toggleTheme {
+    font-size: 1.5rem;
+    color: var(--primary-color);
+    cursor: pointer;
+    transition: ease-in-out .4s;
+    
+}
+
+.menu {  /*UL*/
+    display: flex;
+    align-items: center;  /*alinha itens*/
+    background-color: var(--primary-bg-color);
+}
+.menu-principal{   /*estrutura UL*/
+    gap: 1rem;
+}
+
+.menu-item {
+    width: 100%;
+}
+
+.menu-link {    /*estrutura li*/
+    display: flex;
+    align-items: center;
+    gap: .5rem;  /*espaço*/
+
+}
+
+.menu-link.active .menu-icon,
+.menu-link.active .menu-text,
+.menu-link:hover .menu-icon,
+.menu-link:hover .menu-text{
+    color: var(--primary-color);
+}
+
+.menu-text{   /*tag span*/
+    font-size: .75rem;
+    text-transform: uppercase;
+}
+
+.menu-mobile{
+    width: 100vw;
+    position: fixed;  /* da a opção de mexer nos ícones;rodapé*/
+    bottom: 0;
+    justify-content: space-between;
+    border-top: 1px solid var(--primary-border-color);
+}
+
+.menu-mobile .menu-link{
+    flex-direction: column;
+    justify-content: center;
+    padding: 0.5rem 1rem;
+}
+
+.menu-icon, .menu-text{
+    color: var(--text-color);
+}
+
+.menu-icon{
+    font-size: 1.5rem;
+}
+
+.menu-social{
+    gap: 1rem;
+}
+
+.header-nav{
+    display: none;
+}
+/********** fim CSS menu ***********/
+
+.menu-social{
+    gap: 1rem;
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.625rem;
+    width: 100%;
+    padding: 0.875rem  1.5rem;
+    background: transparent; /*cor do preenchimento*/
+    border-radius: 5rem;
+    transition: ease-in-out  .3s; /*animação*/
+    cursor: pointer;
+    color: var(--primary-color);
+    box-shadow: 5px  5px  15px #C7C8C9;
+}
+
+.btn:hover{
+    transform: scale(1.05);
+    transition: ease-in-out .3s;
+}
+
+.btn span, .btn i{
+    font-size: 1.25rem;
+    text-transform: uppercase;
+}
+
+.btn-primary span{
+    color: var(--primary-color);
+}
+.btn-primary{
+    border: 5px solid var(--primary-color);
+}
+
+.main{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.main-content{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+.video iframe{
+    width: 100%;
+    aspect-ratio: 16/9;
+}
+
+/************* estilo da Seção Tecnologia *************/
+
+.tecnologias {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1.25rem;
+    padding: 6.25rem 1rem 2 rem; 
+    margin-top: -5.5rem;
+    background: var(--secundary-bg-color);
+}
+.tecnologias h2{
+    font-size: 2rem;
+    text-transform: none;
+    letter-spacing: normal;
+    text-align: start;
+}
+.tecnologias-lista{
+    display: flex;
+    flex-flow: row wrap;
+    gap: .5rem; /*espaço entre os itens*/
+}
+.tecnologias-item{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 4.8rem ; /*comprimento*/
+    height: 4.8rem ; /*altura*/
+    border: 1px solid var(--secundary-border-color);
+    border-radius: 10rem;
+
+}
+.tecnologias-logo{
+    height: 2.4rem;
+
+}
+
+/*********** fim da Seção Tecnologia ***********/
