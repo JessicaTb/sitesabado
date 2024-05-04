@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JéssicaTB</title>
+    <link rel="shortcut icon" href="img/favicon.ico">
+    <link rel="stylesheet" href="css/estilo.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!--tag título--> 
+
+</head>
+
+<body>
+    <header class="header"> <!-- cabeçalho -->
+        <nav class="header-nav"> <!-- navegação -->
+            <ul class="menu menu-principal"> <!-- pasta -->
+                <li class="menu-item">
+                    <a href="#home" class="menu-link active">
+                        <span class="menu-text"> Home </span>
+
+                    </a>
+                 </li>
+
+                <li class="menu-item">
+                <a href="#projetos" class="menu-link"> 
+                    <span class="menu-text"> Projetos </span>
+                </a>
+               </li>
+            
+                <li class="menu-item">
+                    <a href="#sobre" class="menu-link">
+                        <span class="menu-text">Sobre</span>   
+                    </a>
+                </li>
+                <li class="menu-item">
+                    <a href="#contato" class="menu-link">
+                    <span class="menu-text">Contato</span>
+
+                     </a>
+                </li>
+            </ul>
+        </nav>
+
+<!--logo -->
+        <div class="header-brand"> <!-- divisórias -->
+            <a href="#home"> 
+                <img src="img/logo.png" alt="" class="brand-logo">
+            </a>
+        </div>
+
+        <div class="header-toggle">
+            <i id="toggleTheme" class="bi bi-sun"> </i>
+            <!-- ícone modo dark e light -->
+        </div>
+    </header> <!-- FIM do cabeçalho -->
+
+    <!-- Menu Mobile --> 
+    <nav id="nav-mobile">     <!-- único -->
+        <ul class="menu menu-mobile"> <!-- lista ordenada -->
+            <li class="menu-item"> 
+                <a href="#home" class="menu-link active">
+                    <i class="menu-icon bi bi-house-door"></i>
+                    <span class="menu-text">Home</span>
+                </a>
+            </li>
+            <li class="menu-item">
+                <a href="#projetos" class="menu-link">
+                    <i class="menu-icon bi bi-window-stack"></i>
+                    <span class="menu-text">Projetos</span>
+                </a>
+            </li>
+            <li class="menu-item">
+                <a href="#sobre" class="menu-link">
+                    <i class="menu-icon bi bi-person"></i>
+                    <span class="menu-text">sobre </span>
+                </a>
+            </li>
+            <li class="menu-item">
+                <a href="#contato" class="menu-link">
+                    <i class="menu-icon bi bi-envelope"></i>
+                    <span class="menu-text">contato </span>
+                </a>
+            </li>
+            
+
+        <ul>
+
+    </nav>
+      <!-- Fim Menu Mobile --> 
+
+    <main id="home">
+        <div class="main-content">
+            <h1> <b>Soluções Criativas & </b> Dev Front-End</h1> 
+            <p> Jéssica Tenório Barbosa, São Paulo - SP, estudante </p>
+            <ul class="menu menu-social">
+                <li>
+                    <a href="https://github.com/jessicatb"  target="_blank"
+                    class="menu-link">
+                        <i class="menu-icon bi bi-github"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.instagram.com/jeeh_ssicah/?next=%2F" target="_blank" 
+                    class="menu-link">
+                    <i class="menu-icon bi-instagram"></i>
+                     </a>
+                </li>
+
+            </ul>
+            <a href="#projetos">
+                <button class="btn btn-primary"> 
+                    <span>Ver Projetos</span>
+                <i class="bi bi-arrow-down-right"></i>
+            </button>
+            </a>
+        </div>
+        <div class="video">
+            <iframe  src="https://www.youtube.com/embed/9cIWcoQONfk" title="HINO DO CORINTHIANS" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+                
+            </iframe>
+         </div>
+    </main> <!-- fim da main -->
+
+<section class="tecnologias"> <!-- section=seção -->
+    <h2> Conhecimento nas principais tecnologias do desenvolvimento. </h2>
+        <ul class="tecnologias-lista">
+            <li class="tecnologias-item">
+                <img src="img/tecnologias/HTML5.svg" alt="" class="tecnologias-logo">
+            </li>
+            <li class="tecnologias-item">
+                <img src="img/tecnologias/Css.svg" alt="" class="tecnologias-logo">
+             </li>
+             <li class="tecnologias-item">
+                <img src="img/tecnologias/Bootstrap.svg" alt="" class="tecnologias-logo">
+             </li>
+             <li class="tecnologias-item">
+                <img src="img/tecnologias/Javascript.svg" alt="" class="tecnologias-logo">
+             </li>
+
+        </ul>
+
+</section> 
+<!-- fim da seção -->
+
+<section id="projetos" class="projetos">
+    <h2>projetos</h2>
+
+    <div class="projetos-container">
+
+        <div class="projeto-card">
+
+            <img class="cartao" src="img/projetos/josisbox.jpg" alt="">
+
+            <div class="card-body">
+                <h3 class="card-title"> Josi's Box Ecomerce</h3>
+                <p class="card-descricao"> Loja Virtual de Livros </p>
+
+                <ul class="card-list">
+                    <li class="card-item">Favotitos</li>
+                    <li class="card-item">Carrinho de Compras</li>
+                    <li class="card-item">Filtro de Preço e Categorias</li>
+
+                </ul>
+
+                <ul class="tecnologias-lista">
+                    <li class="tecnologias-item">
+                       <img class="tecnologias-logo" src="img/tecnologias/Angular.svg" alt="">
+
+                    </li>
+
+                    <li class="tecnologias-item">
+                        <img class="tecnologias-logo" src= "img/tecnologias/TypeScript.svg" alt="">
+ 
+                     </li>
+
+                     <li class="tecnologias-item">
+                        <img class="tecnologias-logo" src="img/tecnologias/Bootstrap.svg" alt="">
+ 
+                     </li>
+
+                     <li class="tecnologias-item">
+                        <img class="tecnologias-logo" src="img/tecnologias/Javascript.svg" alt="">
+ 
+                     </li>
+                </ul>
+
+                <div class="card-button">
+                    <button class="btn btn-primary">
+                        <a href="https://www.amazon.com.br/Livros/b/?ie=UTF8&node=6740748011&ref_=nav_cs_books" target="_blank">
+                        <span>Prévia</span>
+                        <i class="bi bi-arrow-up-right"> </i>
+                        </a>
+                     </button>
+                     <button class="btn">
+                        <a href="https://github.com/JessicaTb/josi-s-test/tree/main"> 
+                        <span>Repositório</span>
+                        </a>
+                     </button>
+                </div>
+            </div> <!-- fim card-body Josis-->
+
+        </div><!-------- projeto-card---- -->
+
+        <div class="projeto-card card-reverso">
+
+            <img class="cartao" src="img/projetos/portfolio.PNG" alt="">
+
+            <div class="card-body">
+                <h3 class="card-title"> Portifolio Pessoal</h3>
+                <p class="card-descricao"></p>
+
+                <ul class="card-list">
+                    <li class="card-item"> Postagens Relacionadas em Destaque. </li>
+                    <li class="card-item"> Filtros por Tag e Categorias. </li>
+                    <li class="card-item"> Biografia do autor. </li>
+                </ul>
+                
+                <ul class="tecnologias-lista">
+                    <li class="tecnologias-item">
+                       <img class="tecnologias-logo" src="img/tecnologias/HTML5.svg" alt="">
+                    </li>
+
+                    <li class="tecnologias-item">
+                        <img class="tecnologias-logo" src= "img/tecnologias/Css.svg" alt="">
+                     </li>
+
+                     <li class="tecnologias-item">
+                        <img class="tecnologias-logo" src="img/tecnologias/Bootstrap.svg" alt="">
+                     </li>
+
+                     <li class="tecnologias-item">
+                        <img class="tecnologias-logo" src="img/tecnologias/Javascript.svg" alt="">
+                     </li>
+
+                </ul>
+
+
+            </div>
+
+        </div><!-- Fim do card-reverso -->
+
+        <!-- GAMES SOTRE -->
+
+        <div class="projeto-card">
+
+            <img class="cartao" src="img/projetos/games-store.jpg" alt="">
+
+            <div class="card-body">
+                <h3 class="card-title"> games-store</h3>
+                <p class="card-descricao"> Loja Online de Games </p>
+
+                <ul class="card-list">
+                    <li class="card-item">Favotitos</li>
+                    <li class="card-item">Carrinho de Compras</li>
+                    <li class="card-item">Filtro de Preço e Categorias</li>
+
+                </ul>
+
+                <ul class="tecnologias-lista">
+                    <li class="tecnologias-item">
+                       <img class="tecnologias-logo" src="img/tecnologias/Angular.svg" alt="">
+
+                    </li>
+
+                    <li class="tecnologias-item">
+                        <img class="tecnologias-logo" src= "img/tecnologias/TypeScript.svg" alt="">
+ 
+                     </li>
+
+                     <li class="tecnologias-item">
+                        <img class="tecnologias-logo" src="img/tecnologias/Bootstrap.svg" alt="">
+ 
+                     </li>
+
+                     <li class="tecnologias-item">
+                        <img class="tecnologias-logo" src="img/tecnologias/Javascript.svg" alt="">
+ 
+                     </li>
+                </ul>
+
+                <div class="card-button">
+                    <button class="btn btn-primary">
+                        <a href="https://www.xbox.com/pt-BR" target="_blank">
+                        <span>Prévia</span>
+                        <i class="bi bi-arrow-up-right"></i>
+                        </a>
+                     </button>
+                     <button class="btn">
+                        <a href="https://github.com/JessicaTb/josi-s-test/tree/main"> 
+                        <span>Repositório</span>
+                        </a>
+                     </button>
+                </div>
+            </div> <!-- fim card-body Josis-->
+        </div><!-------- projeto-card---- -->
+
+
+    </div> <!-- Fim Projetos-container -->
+
+</section>
+    
+<section id="sobre" class="sobre">
+    <article class="sobre-content1">
+        <img class="sobre-foto" src="img/logo.jfif" alt="">
+
+            
+        <div class="sobre-descricao">
+            <h2> Sobre Mim</h2>
+            <p>Jéssica Tenório Barbosa. Formada em Técnico de Segurança no Trabalho, interessada na area de psicologia, fiz alguns cursos relacionados, com certificado. Certificação em Primeiros Socorros. 🌻 🖤E VAI CURINTIAAA 🦅
+            </p> 
+         </div>
+    
+        <div class="sobre-icons">
+            <i class="bi bi-translate"> </i>
+            <span> Ingês: Básico</span>
+        </div>
+
+        <div class="descricao-button">
+            <a href=""  target="_blank">
+                <button class="btn btn-primary">
+                    <span> Conecte-se Comigo</span>
+                </button>
+            </a>
+        </div>
+    </article>
+
+    <article class="sobre-content2">
+        <div class="col1">
+            <div class="rowl">
+                <h3>Formação</h3>
+                <h4>Técnico de Segurança no Trabalho</h4>
+                <p>Fev 2021- Dez-2023</p>
+                <div class="sobre-icons">
+                    <i class="bi bi-bank"> </i>
+                    <span>ETEC Pirituba</span>
+                </div>
+
+                <div class="sobre-icons">
+                    <i class="bi bi-mortarboard"></i>
+                    <span> Técnica de Segurança do Trabalho </span>
+                </div>
+            </div><!-- fim row 1 -->
+
+            <div class="row2">
+                <h3>Experiências</h3>
+                <h4>Socorrista</h4>
+                <span>Corpo de Bombeiros</span>
+                <span>Introdução à primeiros socorros e como socorrer alguem em situações de emergência. Avaliação de cena e vítimas e  traumas</span>
+            </div>
+        </div> <!-- fim da coluna - 1  -->
+
+        <!-- -------COLUNA 2 --------- -->
+
+        <div  class="col2">
+            <h3> Cursos </h3>
+            <div class="accordion">
+
+                <div class="accordion-item active">
+                    <button class="accordion-header start">
+                        <span>Neuroplasticidade</span>
+                        <i class="bi bi-caret-down-fill"></i>
+                    </button>
+
+                    <div class="accordion-bory">
+                        <p>Cessetembro.  Março 2024- 40H</p>
+                        <p>As bases do sistema nervoso. O que é Neuroplasticidade? Transtornos Mentais. Neuroplasticidade e neurogênese</p>
+                    </div>
+
+                </div><!-- Fim accordion-item active  -->
+
+                <div class="accordion-item ">
+                    <button class="accordion-header">
+                        <span>Comunicação Não Violenta, Empatia e Cooperação</span>
+                        <i class="bi bi-caret-down-fill"></i>
+                    </button>
+
+                    <div class="accordion-bory">
+                        <p>PUC-RS  Fevereiro 2024 10H</p>
+                        <p>Como ter empatia com o próximo, como agir em um ambiente de trabalho, principalmente em uma decisão difícil. Natureza x Criação. Neurolinguística. Teoria dos sistemas dinâmicos</p>
+                    </div>
+
+                </div> <!-- fim do accordion-item -->
+
+            </div>
+            <!-- fim do accordion -->
+        </div><!-- fim da coluna 2 -->
+
+    </article>
+    
+</section>
+
+<section id="contato" class="contato">
+    <h2> Contate-me </h2>
+    <p>
+        Estarei disponível durante segunda a sexta das 09h00 às 20h00
+    </p>
+
+    <ul class="menu menu-social">
+        <li>
+            <a href="https://github.com/jessicatb" target="_blank">
+                <i class="menu-icon bi-github"></i>
+                <span>Github</span>
+            </a>
+        </li>
+
+        <li>
+            <a href="https://www.instagram.com/jeeh_ssicah/?next=%2F" target="_blank">
+                <i class="menu-icon bi-instagram"></i>
+                <span>Instagram</span>
+            </a>
+        </li>
+    </ul>
+
+    <a href="mailto:jessica14tb@gmail.com">
+        <button class="btn btn-primary">
+            <span class="email"> jessica14tb@gmail.com</span>
+        </button>
+    </a>
+</section>
+
+    <footer>
+        <p>
+            &COPY; 2024. Portifolio Desenvolvido para fins Educativos do curso de Front-End no 
+            <a href="https://sp.senai.br/unidade/leopoldina/" target="_blank"> 
+              SENAI.
+            </a>
+            Desenvolvido por 
+            <a href="https://www.instagram.com/jeeh_ssicah/?next=%2F"> Jéssica Tenório</a>
+        </p>
+    </footer>
+
+
+</body>
+</html>
