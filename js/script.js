@@ -3,7 +3,7 @@
 const toggleTheme = document.getElementById("toggleTheme");
 const rootHtml = document.documentElement;
 const accordionHeaders = document.querySelectorAll (".accordion-header");
-const manulinks = document.querySelectorAll(".menu-link")
+const menuLinks = document.querySelectorAll(".menu-link")
 
 function changeTheme() {
     const currentTheme = rootHtml.getAttribute ("data-theme");
