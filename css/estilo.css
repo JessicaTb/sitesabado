@@ -4,35 +4,37 @@
 :root,:root[data-theme='dark'] {
     /* definir cores padrão em Variável */
     
-    --primary-color: #f6daab;  /* cor textos */
-    --primary-bg-color: #fcbf6b;  /* BG = Background */
-    --secondary-bg-color: #eaa838;
+    --primary-color: #aa6e06;  /* cor textos */
+    --primary-bg-color: #362826;  /* BG = Background */
+    --secondary-bg-color: #553931;
     --primary-border-color: #372725;
     --secondary-border-color: #42302e;
         
     /* definir cores padrão para os TEXTOS em Variável */
-    --title-color: #42302e;
-    --text-color: #42302e;
-    --link-color:#42302e;
-    --icon-color: #42302e;
+    --title-color: #eaa838;
+    --text-color: #eaa838;
+    --link-color:#eaa838;
+    --icon-color: #eaa838;
 } 
 
 :root[data-theme='light'] {
 
-    --primary-color: #0b0b0f;
-    --primary-bg-color: #e9e9e9;
-    --secondary-bg-color: #C7c8c9;
+    --primary-color: #944505ec;
+    --primary-bg-color: #ffb041;
+    --secondary-bg-color: #f0a63f;
     --primary-border-color:  #42302e;
     --secondary-border-color: #42302e;
-    --title-color: #42302e;
-    --text-color: #42302e;
+    --title-color: #271c1b;
+    --text-color: #2e2221;
     --link-color: #42302e;
-    --icon-color: #42302e;
+    --icon-color: #3d2e2d ;
 }
 
 html[data-theme='light'].brand-logo {
     filter: invert(1);
-} 
+
+}
+
 html[data-theme='light'].tecnologias-logo {
     filter: invert(80%);
   }
